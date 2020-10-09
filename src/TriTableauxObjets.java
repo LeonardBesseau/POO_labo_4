@@ -1,10 +1,10 @@
 public class TriTableauxObjets {
     /**
      * Swap position between two Int in the array
-     * @param array An Int array
-     * @param i index of the first Int to swap
-     * @param j index of the second Int to swap
      *
+     * @param array An Int array
+     * @param i     index of the first Int to swap
+     * @param j     index of the second Int to swap
      * @implNote No check are made to verify that i and j are < array.length
      */
     public static void swap(Int[] array, int i, int j) {
@@ -15,6 +15,7 @@ public class TriTableauxObjets {
 
     /**
      * Swap value of two Int
+     *
      * @param a the first Int to swap with
      * @param b the second Int to swap with
      */

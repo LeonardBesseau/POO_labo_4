@@ -21,12 +21,12 @@ public class Int {
 
     @Override
     public String toString() {
-        return ""+ value;
+        return "" + value;
     }
 
     public static void main(String[] args) {
-        Int test= new Int(1);
-        Int test2= new Int(2);
+        Int test = new Int(1);
+        Int test2 = new Int(2);
         System.out.println(test);
         System.out.println(test2);
         test.swap(test2);

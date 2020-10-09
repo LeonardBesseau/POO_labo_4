@@ -10,7 +10,7 @@ public class TriTableauEntiers {
      * @throws RuntimeException if string is not an integer on base 10
      */
     public static int parseString(String input) {
-        if (input == null){
+        if (input == null) {
             throw new RuntimeException();
         }
         int output = 0;
@@ -18,7 +18,7 @@ public class TriTableauEntiers {
         boolean signed = false;
         int exponent = 1;
         for (int i = 0; i < input.length(); i++) {
-            switch (input.charAt(i)){
+            switch (input.charAt(i)) {
                 case '-':
                     if (signed || i != 0) {
                         throw new RuntimeException();
