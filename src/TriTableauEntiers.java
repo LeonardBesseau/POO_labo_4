@@ -6,10 +6,13 @@ public class TriTableauEntiers {
      * Parse a string to an integer
      *
      * @param input a string with a sign symbol at it's first char
-     * @return an integer
-     * @throws RuntimeException if multiple sign symbols are detected
+     * @return an integer based on the string
+     * @throws RuntimeException if string is not an integer on base 10
      */
     public static int parseString(String input) {
+        if (input == null){
+            throw new RuntimeException();
+        }
         int output = 0;
         int sign = 1;
         boolean signed = false;
@@ -84,6 +87,9 @@ public class TriTableauEntiers {
     }
 
     public static void main(String[] args) {
+        String test = "";
+        int a = parseString(test);
+
         int[] integers = new int[args.length];
         for (int i = 0; i < args.length; i++) {
             integers[i] = parseString(args[i]);
